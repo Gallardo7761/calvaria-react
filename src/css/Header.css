@@ -1,0 +1,5 @@
+.header-img {
+    max-width: 80%;
+    height: auto;
+    animation: zoomInOutRotate 10s infinite ease-in-out;
+}

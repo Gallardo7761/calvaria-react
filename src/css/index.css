@@ -1,0 +1,52 @@
+@font-face {
+  font-family: Andy Mt Bold;
+  src: url("fonts/andy-mt-bold.ttf");
+}
+
+@font-face {
+  font-family: Andy Mt;
+  src: url("fonts/andy-mt-regular.ttf");
+}
+
+@keyframes zoomInOutRotate {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.1) rotate(10deg);
+  }
+  50% {
+    transform: scale(1) rotate(0deg);
+  }
+  75% {
+    transform: scale(1.1) rotate(-10deg);
+  }
+}
+
+* {
+  color: white;
+  font-family: Andy Mt;
+}
+
+body {
+  background: url("images/bg2.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0; /* Eliminar márgenes del body */
+  padding: 0; /* Eliminar relleno del body */
+  display: flex; /* Usar flexbox para centrar globalmente */
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footer-link {
+  color: #ffcc00; /* Cambia el color de los enlaces en el footer */
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #ff9900; /* Cambia el color al pasar el ratón por encima */
+}
