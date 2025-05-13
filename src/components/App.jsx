@@ -1,6 +1,5 @@
 import Header from "./Header.jsx";
 import Container from "./Container.jsx";
-import DownloadButton from "./DownloadButton.jsx";
 import Footer from "./Footer.jsx";
 
 function App() {
@@ -10,13 +9,12 @@ function App() {
         <Header></Header>
         <main className="d-flex flex-column gap-3">
             <Container>
-                <h2>Información del servidor</h2>
-                <ul>
-                    <li><h4>Dirección: miarma.net</h4></li>
-                    <li><h4>Puerto: 7777</h4></li>
-                    <li><h4>Versión: 1.4.4.9</h4></li>
-                </ul>
-                <DownloadButton />
+              <div className="m-0 p-0 d-flex text-center flex-column justify-content-center">
+                <h3>Dirección: miarma.net</h3>
+                <h3>Puerto: 7777</h3>
+                <h3>Versión: 1.4.4.9</h3>
+                <a className="download" href="/downloads/Calvaria.zip"><h3>Descargar Modpack</h3></a>
+              </div>
             </Container>
             <Footer />
         </main>

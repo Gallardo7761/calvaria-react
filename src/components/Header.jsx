@@ -1,3 +1,5 @@
+import '../css/Header.css';
+
 export default function Header() {
     return (
         <header className="d-flex justify-content-center mt-5">

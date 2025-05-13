@@ -25,7 +25,12 @@
 
 * {
   color: white;
-  font-family: Andy Mt;
+  font-family: Andy Mt Bold;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
 }
 
 body {
@@ -34,19 +39,18 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin: 0; /* Eliminar márgenes del body */
-  padding: 0; /* Eliminar relleno del body */
-  display: flex; /* Usar flexbox para centrar globalmente */
+  margin: 0;
+  padding: 0;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
-.footer-link {
-  color: #ffcc00; /* Cambia el color de los enlaces en el footer */
-  text-decoration: none;
+a {
+  text-decoration: none !important;
+  color: white !important;
 }
 
-.footer-link:hover {
-  color: #ff9900; /* Cambia el color al pasar el ratón por encima */
+a:hover {
+  color: yellow !important;
 }
